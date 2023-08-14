@@ -7,13 +7,16 @@ import MobileNav from "./MobileNav";
 
 export const Navbar = () => {
   return (
-    <header className="sticky top-0 w-full border-b bg-white">
+    <header className="sticky top-0 w-full border-b bg-white z-50">
       <nav className="container flex h-16 items-center justify-between">
         <div className="flex items-center gap-4">
-          <div className=" md:hidden">
+          <div className="md:hidden cursor-pointer">
             <MobileNav />
           </div>
-          <Image src={Logo} width={60} height={60} alt="logo" />
+
+          <Link href={"/"}>
+            <Image src={Logo} width={60} height={60} alt="logo" />
+          </Link>
         </div>
         <div className="hidden md:block">
           <ul className="flex items-center gap- font-medium">
@@ -29,7 +32,7 @@ export const Navbar = () => {
           </ul>
         </div>
         <div className="flex items-center gap-4">
-          <div className="cursor-pointer">
+          <div className="cursor-pointer  grid items-center hover:bg-gray-100 p-2 pr-[10px] py-2 rounded-full">
             <AiOutlineShoppingCart size={24} />
           </div>
           <Button>Sign in</Button>

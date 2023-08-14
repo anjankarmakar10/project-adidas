@@ -89,3 +89,7 @@
 .animate-bounce {
   animation: bounce 4.5s infinite;
 }
+
+::-webkit-scrollbar {
+  display: none;
+}
