@@ -3,8 +3,8 @@ import ProductCard from "../Cards/ProductCard";
 
 const HotDeals = () => {
   return (
-    <section className="container px-4 mx-auto py-10">
-      <header className="font-bold text-3xl mb-6 flex items-center justify-between">
+    <section className="container px-4 mx-auto ">
+      <header className="font-bold text-2xl md:text-3xl mb-6 flex items-center justify-between">
         Featured products
         <Button>View all</Button>
       </header>
