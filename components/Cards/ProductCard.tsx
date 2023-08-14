@@ -27,9 +27,9 @@ const ProductCard = () => {
         </AspectRatio>
       </CardHeader>
 
-      <CardContent className="p-4">
-        <CardTitle>Hello</CardTitle>
-        <CardDescription>Hello</CardDescription>
+      <CardContent className="p-4 gap-2.5">
+        <CardTitle className="line-clamp-1">Hello</CardTitle>
+        <CardDescription className="line-clamp-2s">Hello</CardDescription>
       </CardContent>
 
       <CardFooter className="flex  p-4  w-full flex-col items-center gap-2 sm:flex-row sm:justify-between">

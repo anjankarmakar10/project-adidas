@@ -31,10 +31,10 @@ export const Navbar = () => {
             </Button>
           </ul>
         </div>
-        <div className="flex items-center gap-4">
-          <div className="cursor-pointer  grid items-center hover:bg-gray-100 p-2 pr-[10px] py-2 rounded-full">
+        <div className="flex items-center gap-2">
+          <Button size={"icon"} variant={"outline"}>
             <AiOutlineShoppingCart size={24} />
-          </div>
+          </Button>
           <Button>Sign in</Button>
         </div>
       </nav>
